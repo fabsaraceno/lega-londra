@@ -1,0 +1,1299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>La Domenica del Fanta | Lega Londra — Giornate 6–9</title>
+  <meta name="description" content="The Official Unofficial Gazette of Lega Londra Fantacalcio 2026/27 — Giornate 6–9 Recap, Pagelle, Classifiche & Pizza Watch." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,600;0,6..72,700;1,6..72,400&family=Playfair+Display:ital,wght@0,700;0,900;1,700&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --bg-paper: #f7efe6;
+      --bg-gazzetta: #f3dfd5;
+      --bg-card: #fffcf8;
+      --bg-ink: #1a1817;
+      --bg-forest: #1e3b2e;
+      --bg-forest-dark: #152b21;
+      --accent-burgundy: #8f2436;
+      --accent-gold: #c9963b;
+      --accent-gold-light: #ebbf67;
+      --text-main: #221f1d;
+      --text-muted: #665e57;
+      --border-rule: #d5c7b8;
+      --border-strong: #221f1d;
+      --green-good: #2d6a4f;
+      --amber-mid: #b88328;
+      --red-bad: #9e2a2b;
+      --shadow-card: 0 2px 8px rgba(26, 24, 23, 0.05);
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      background-color: var(--bg-paper);
+      background-image: radial-gradient(rgba(34, 31, 29, 0.04) 1px, transparent 0);
+      background-size: 24px 24px;
+      color: var(--text-main);
+      font-family: 'Newsreader', Georgia, serif;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    /* Top Gazzetta Ribbon */
+    .gazzetta-strip {
+      background: var(--accent-burgundy);
+      color: #fff;
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 11px;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      padding: 6px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 2px solid var(--bg-ink);
+    }
+
+    .gazzetta-strip span {
+      opacity: 0.9;
+    }
+
+    /* Masthead */
+    header {
+      background: var(--bg-forest);
+      color: #fff;
+      border-bottom: 4px solid var(--accent-gold);
+      position: relative;
+    }
+
+    .masthead {
+      max-width: 1180px;
+      margin: 0 auto;
+      padding: 28px 24px 24px;
+      display: grid;
+      grid-template-columns: 1fr auto 1fr;
+      align-items: center;
+      gap: 20px;
+    }
+
+    .edition-box {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 11px;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: #d8e2dc;
+      line-height: 1.6;
+    }
+
+    .edition-box strong {
+      color: var(--accent-gold-light);
+      display: block;
+      font-size: 12px;
+    }
+
+    .title-block {
+      text-align: center;
+    }
+
+    .kicker {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 0.22em;
+      text-transform: uppercase;
+      color: var(--accent-gold-light);
+      margin-bottom: 6px;
+    }
+
+    .brand {
+      font-family: 'Playfair Display', Georgia, serif;
+      font-size: clamp(32px, 5vw, 52px);
+      font-weight: 900;
+      line-height: 0.95;
+      letter-spacing: -0.02em;
+      margin: 0;
+      text-transform: uppercase;
+    }
+
+    .brand span {
+      color: var(--accent-gold-light);
+      font-style: italic;
+    }
+
+    .subtitle {
+      font-family: 'Newsreader', Georgia, serif;
+      font-style: italic;
+      font-size: 14px;
+      color: #e2ece7;
+      margin-top: 8px;
+    }
+
+    .price-box {
+      text-align: right;
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 11px;
+      color: #d8e2dc;
+      line-height: 1.6;
+    }
+
+    .price-tag {
+      display: inline-block;
+      border: 1px solid var(--accent-gold-light);
+      color: var(--accent-gold-light);
+      padding: 3px 8px;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      margin-bottom: 4px;
+    }
+
+    /* Sticky Navigation */
+    nav {
+      background: var(--bg-forest-dark);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+    }
+
+    .nav-inner {
+      max-width: 1180px;
+      margin: 0 auto;
+      padding: 0 24px;
+      display: flex;
+      gap: 6px;
+      overflow-x: auto;
+      scrollbar-width: none;
+    }
+
+    .nav-inner::-webkit-scrollbar {
+      display: none;
+    }
+
+    .nav-inner a {
+      color: #e8efe9;
+      text-decoration: none;
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 12px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      padding: 12px 14px;
+      white-space: nowrap;
+      border-bottom: 3px solid transparent;
+      transition: all 0.15s ease;
+    }
+
+    .nav-inner a:hover {
+      color: var(--accent-gold-light);
+      border-bottom-color: var(--accent-gold-light);
+      background: rgba(255, 255, 255, 0.04);
+    }
+
+    /* Main Container */
+    .container {
+      max-width: 1180px;
+      margin: 0 auto;
+      padding: 28px 24px 64px;
+    }
+
+    /* Editorial Lead Banner */
+    .editorial-banner {
+      background: var(--bg-card);
+      border: 1px solid var(--border-rule);
+      border-left: 6px solid var(--accent-burgundy);
+      padding: 22px 26px;
+      margin-bottom: 30px;
+      box-shadow: var(--shadow-card);
+      position: relative;
+    }
+
+    .eyebrow {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--accent-burgundy);
+      margin-bottom: 6px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .eyebrow::after {
+      content: "";
+      flex: 1;
+      height: 1px;
+      background: var(--border-rule);
+    }
+
+    .editorial-banner h2 {
+      font-family: 'Playfair Display', Georgia, serif;
+      font-size: clamp(22px, 3vw, 29px);
+      font-weight: 900;
+      margin: 0 0 10px;
+      line-height: 1.15;
+    }
+
+    .editorial-banner p {
+      font-size: 17px;
+      line-height: 1.6;
+      margin: 0;
+      color: #2f2b28;
+    }
+
+    /* Two-column Layout */
+    .layout-grid {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) 310px;
+      gap: 34px;
+      align-items: start;
+    }
+
+    /* Back Page Hero */
+    .hero-card {
+      background: var(--bg-ink);
+      color: #fff;
+      padding: 34px 32px;
+      border-top: 5px solid var(--accent-gold);
+      margin-bottom: 24px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .hero-badge {
+      display: inline-block;
+      background: var(--accent-burgundy);
+      color: #fff;
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 10px;
+      font-weight: 700;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      padding: 4px 10px;
+      margin-bottom: 14px;
+    }
+
+    .hero-card h1 {
+      font-family: 'Playfair Display', Georgia, serif;
+      font-size: clamp(34px, 4.5vw, 50px);
+      font-weight: 900;
+      line-height: 0.98;
+      margin: 0 0 16px;
+      letter-spacing: -0.02em;
+    }
+
+    .hero-deck {
+      font-size: 17px;
+      line-height: 1.55;
+      color: #e5dfd7;
+      margin: 0 0 22px;
+    }
+
+    .hero-stats {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 12px;
+      border-top: 1px solid rgba(255, 255, 255, 0.16);
+      padding-top: 16px;
+    }
+
+    .stat-pill {
+      background: rgba(255, 255, 255, 0.06);
+      padding: 10px 12px;
+      border-left: 3px solid var(--accent-gold-light);
+    }
+
+    .stat-pill .num {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 20px;
+      font-weight: 700;
+      color: var(--accent-gold-light);
+      display: block;
+    }
+
+    .stat-pill .lbl {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 10px;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: #c7c0b8;
+    }
+
+    
+    /* Hero Feature Split */
+    .hero-feature-grid {
+      display: grid;
+      grid-template-columns: 1.25fr 0.75fr;
+      gap: 24px;
+      align-items: center;
+      margin-bottom: 22px;
+    }
+
+    .hero-art-frame {
+      background: #fffcf8;
+      border: 3px solid var(--accent-gold-light);
+      padding: 6px;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.35);
+      border-radius: 3px;
+    }
+
+    .hero-art-frame img {
+      display: block;
+      width: 100%;
+      height: auto;
+      border-radius: 2px;
+    }
+
+    .hero-art-caption {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 10px;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--bg-ink);
+      background: #f5efe6;
+      padding: 6px 8px;
+      margin-top: 6px;
+      text-align: center;
+      font-weight: 700;
+    }
+
+    /* Body Prose with Drop Cap */
+    .article-body p {
+      font-size: 17px;
+      line-height: 1.68;
+      margin: 0 0 18px;
+    }
+
+    .article-body p:first-of-type::first-letter {
+      float: left;
+      font-family: 'Playfair Display', Georgia, serif;
+      font-size: 54px;
+      line-height: 0.82;
+      padding-right: 10px;
+      padding-top: 4px;
+      font-weight: 900;
+      color: var(--accent-burgundy);
+    }
+
+    /* Il Caso Box (Gazzetta Pink Tint) */
+    .il-caso {
+      background: var(--bg-gazzetta);
+      border: 1px solid #d9b8aa;
+      border-left: 5px solid var(--accent-burgundy);
+      padding: 20px 24px;
+      margin: 28px 0;
+    }
+
+    .il-caso-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 8px;
+    }
+
+    .il-caso h3 {
+      font-family: 'Playfair Display', Georgia, serif;
+      font-size: 21px;
+      font-weight: 900;
+      margin: 0 0 10px;
+      color: var(--bg-ink);
+    }
+
+    .il-caso p {
+      font-size: 16px;
+      line-height: 1.6;
+      margin: 0 0 12px;
+    }
+
+    .cm-ticker {
+      background: #1d283a;
+      color: #8be9fd;
+      font-family: 'Courier New', monospace;
+      font-size: 12px;
+      padding: 8px 12px;
+      border-radius: 2px;
+      border-left: 3px solid #50fa7b;
+    }
+
+    /* Section Headings */
+    .section-block {
+      margin-top: 36px;
+    }
+
+    .section-head {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      border-bottom: 2px solid var(--border-strong);
+      padding-bottom: 8px;
+      margin-bottom: 18px;
+    }
+
+    .section-head h2 {
+      font-family: 'Playfair Display', Georgia, serif;
+      font-size: 24px;
+      font-weight: 900;
+      margin: 0;
+    }
+
+    .section-head span {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 11px;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--text-muted);
+    }
+
+    /* I Migliori in Campo */
+    .best-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 12px;
+    }
+
+    .player-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-rule);
+      padding: 14px;
+      box-shadow: var(--shadow-card);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .player-top {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 8px;
+    }
+
+    .fanta-voto {
+      background: var(--bg-forest);
+      color: var(--accent-gold-light);
+      font-family: 'Space Grotesk', sans-serif;
+      font-weight: 700;
+      font-size: 14px;
+      padding: 4px 8px;
+      border-radius: 3px;
+      min-width: 44px;
+      text-align: center;
+    }
+
+    .player-name {
+      font-family: 'Space Grotesk', sans-serif;
+      font-weight: 700;
+      font-size: 15px;
+      color: var(--bg-ink);
+    }
+
+    .player-team {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 10px;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      color: var(--text-muted);
+    }
+
+    .player-card p {
+      font-size: 13.5px;
+      line-height: 1.45;
+      margin: 0;
+      color: #36322f;
+    }
+
+    /* Filter Bar for Pagelle */
+    .filter-bar {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-bottom: 16px;
+    }
+
+    .filter-btn {
+      background: var(--bg-card);
+      border: 1px solid var(--border-rule);
+      color: var(--text-main);
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 11px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      padding: 6px 12px;
+      cursor: pointer;
+      transition: all 0.15s ease;
+    }
+
+    .filter-btn:hover,
+    .filter-btn.active {
+      background: var(--bg-ink);
+      color: #fff;
+      border-color: var(--bg-ink);
+    }
+
+    /* Ziliani Pagelle Cards */
+    .pagelle-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 14px;
+    }
+
+    .pagella-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-rule);
+      border-top: 4px solid var(--green-good);
+      padding: 16px 18px;
+      box-shadow: var(--shadow-card);
+      transition: transform 0.15s ease;
+    }
+
+    .pagella-card:hover {
+      transform: translateY(-2px);
+    }
+
+    .pagella-card.mid {
+      border-top-color: var(--amber-mid);
+    }
+
+    .pagella-card.bad {
+      border-top-color: var(--red-bad);
+    }
+
+    .pagella-card.hidden {
+      display: none;
+    }
+
+    .pagella-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      gap: 10px;
+      margin-bottom: 8px;
+      padding-bottom: 8px;
+      border-bottom: 1px dashed var(--border-rule);
+    }
+
+    .team-title {
+      font-family: 'Space Grotesk', sans-serif;
+      font-weight: 700;
+      font-size: 15px;
+      margin: 0;
+      color: var(--bg-ink);
+    }
+
+    .manager-sub {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 11px;
+      color: var(--text-muted);
+      margin-top: 2px;
+    }
+
+    .voto-pill {
+      font-family: 'Playfair Display', Georgia, serif;
+      font-weight: 900;
+      font-size: 20px;
+      line-height: 1;
+      padding: 5px 10px;
+      background: #eef4f0;
+      color: var(--green-good);
+      border: 1px solid rgba(45, 106, 79, 0.25);
+      flex-shrink: 0;
+    }
+
+    .pagella-card.mid .voto-pill {
+      background: #fbf4e6;
+      color: var(--amber-mid);
+      border-color: rgba(184, 131, 40, 0.25);
+    }
+
+    .pagella-card.bad .voto-pill {
+      background: #faeaea;
+      color: var(--red-bad);
+      border-color: rgba(158, 42, 43, 0.25);
+    }
+
+    .pagella-headline {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--accent-burgundy);
+      margin-bottom: 8px;
+    }
+
+    .pagella-card p {
+      font-size: 14.5px;
+      line-height: 1.55;
+      margin: 0;
+      color: #2b2724;
+    }
+
+    /* Sidebar Standings & Pizza Watch */
+    aside {
+      position: sticky;
+      top: 56px;
+    }
+
+    .standings-box {
+      background: var(--bg-card);
+      border: 1px solid var(--border-rule);
+      margin-bottom: 22px;
+      box-shadow: var(--shadow-card);
+    }
+
+    .standings-header {
+      background: var(--bg-forest);
+      color: #fff;
+      padding: 11px 14px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 3px solid var(--accent-gold);
+    }
+
+    .standings-header h3 {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 13px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      margin: 0;
+    }
+
+    .standings-header span {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 10px;
+      color: var(--accent-gold-light);
+      text-transform: uppercase;
+    }
+
+    table.league-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 12px;
+    }
+
+    table.league-table th {
+      text-align: left;
+      font-size: 10px;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      color: var(--text-muted);
+      padding: 7px 10px;
+      border-bottom: 1px solid var(--border-rule);
+      background: #f5efe6;
+    }
+
+    table.league-table th:last-child,
+    table.league-table td:last-child {
+      text-align: right;
+    }
+
+    table.league-table td {
+      padding: 7px 10px;
+      border-bottom: 1px solid #ece3d7;
+    }
+
+    table.league-table tr:last-child td {
+      border-bottom: none;
+    }
+
+    table.league-table tr.pos-1 {
+      background: #fbf2d5;
+      font-weight: 700;
+    }
+
+    table.league-table tr.pos-podium td:first-child {
+      color: var(--green-good);
+      font-weight: 700;
+    }
+
+    table.league-table tr.pos-pizza {
+      background: #faecea;
+    }
+
+    table.league-table tr.pos-pizza td:first-child {
+      color: var(--red-bad);
+      font-weight: 700;
+    }
+
+    .team-col {
+      display: block;
+      font-weight: 700;
+      color: var(--bg-ink);
+      line-height: 1.2;
+    }
+
+    .mgr-col {
+      display: block;
+      font-size: 10px;
+      color: var(--text-muted);
+      font-weight: 500;
+    }
+
+    .pts-cell {
+      font-weight: 700;
+      font-variant-numeric: tabular-nums;
+    }
+
+    /* Pizza Watch Box */
+    .pizza-box {
+      background: #fae9e6;
+      border: 1px solid #d9b2ae;
+      border-top: 5px solid var(--accent-burgundy);
+      padding: 18px;
+      box-shadow: var(--shadow-card);
+    }
+
+    .pizza-box h3 {
+      font-family: 'Playfair Display', Georgia, serif;
+      font-size: 20px;
+      font-weight: 900;
+      color: var(--accent-burgundy);
+      margin: 0 0 10px;
+    }
+
+    .pizza-box p {
+      font-size: 14px;
+      line-height: 1.55;
+      margin: 0 0 12px;
+      color: #2f2423;
+    }
+
+    .tribunal-note {
+      background: rgba(255, 255, 255, 0.7);
+      border-left: 3px solid var(--accent-burgundy);
+      padding: 8px 10px;
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 11px;
+      color: #4a3533;
+      line-height: 1.45;
+    }
+
+    /* Footer */
+    footer {
+      background: var(--bg-forest);
+      color: #e2ece7;
+      border-top: 4px solid var(--accent-gold);
+      padding: 28px 24px;
+      text-align: center;
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 12px;
+    }
+
+    footer strong {
+      color: var(--accent-gold-light);
+      letter-spacing: 0.08em;
+    }
+
+    footer p {
+      margin: 6px 0 0;
+      font-size: 11px;
+      opacity: 0.8;
+    }
+
+    /* Responsive */
+    @media (max-width: 960px) {
+      .layout-grid {
+        grid-template-columns: 1fr;
+      }
+      aside {
+        position: static;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 18px;
+      }
+      .pizza-box {
+        grid-column: 1 / -1;
+      }
+    }
+
+    @media (max-width: 720px) {
+      .masthead {
+        grid-template-columns: 1fr;
+        text-align: center;
+        gap: 10px;
+      }
+      .edition-box,
+      .price-box {
+        text-align: center;
+      }
+      .best-grid,
+      .pagelle-grid,
+      aside {
+        grid-template-columns: 1fr;
+      }
+      .hero-stats {
+        grid-template-columns: 1fr;
+      }
+      .hero-feature-grid {
+        grid-template-columns: 1fr;
+      }
+      .hero-art-frame {
+        max-width: 360px;
+        margin: 0 auto;
+      }
+
+    }
+  </style>
+</head>
+<body>
+
+  <div class="gazzetta-strip">
+    <span>★ Edizione Speciale · Giornate 6–9</span>
+    <span>The Official Unofficial Gazette of Lega Londra</span>
+  </div>
+
+  <header>
+    <div class="masthead">
+      <div class="edition-box">
+        <strong>Stagione 2026/27</strong>
+        Dopo 9 Giornate · 12 Squadre
+      </div>
+      <div class="title-block">
+        <div class="kicker">● Lega Londra Fantacalcio</div>
+        <h1 class="brand">La Domenica del <span>Fanta</span></h1>
+        <div class="subtitle">Analisi, polemiche, pagelle e sentenze sul Pizza dell’Anno</div>
+      </div>
+      <div class="price-box">
+        <div class="price-tag">PREZZO: UN ESPRESSO</div><br />
+        Generale · Scontri · Coppe
+      </div>
+    </div>
+  </header>
+
+  <nav aria-label="Sezioni del giornale">
+    <div class="nav-inner">
+      <a href="#editoriale">Editoriale</a>
+      <a href="#copertina">Prima Pagina</a>
+      <a href="#il-caso">Il Caso</a>
+      <a href="#migliori">I Migliori</a>
+      <a href="#pagelle">Le Pagelle</a>
+      <a href="#classifiche">Classifiche</a>
+      <a href="#pizza-watch">Pizza Watch</a>
+    </div>
+  </nav>
+
+  <main class="container">
+
+    <!-- L'Editoriale -->
+    <section id="editoriale" class="editorial-banner">
+      <div class="eyebrow">L'Editoriale · Quattro Giornate Dopo</div>
+      <h2>Fran takes the wheel. Paolo G kicks the door down.</h2>
+      <p>Four weeks have turned the early hierarchy upside down. <strong>Don't Touch My Cozz</strong> has passed Verdi to lead both classifications, while <strong>Here We Don FC</strong> has gone from interesting newcomer to genuine menace. Behind them, Dario has produced some of the biggest scores of the season and still discovered new ways not to convert them into Scontri points.</p>
+    </section>
+
+    <div class="layout-grid">
+      <!-- Main Column -->
+      <div>
+
+        <!-- Back Page Hero -->
+        <article id="copertina" class="hero-card">
+          <div class="hero-badge">The Back Page · La Svolta</div>
+          <div class="hero-feature-grid">
+            <div>
+              <h1>COZZ YOU BELIEVE IT?</h1>
+              <p class="hero-deck">Fran is now top of both tables: 690.5 in the Generale and 18 Scontri points. Verdi remain level on 18 in the head-to-head table but trail on the tie-break, while Paolo G has stormed into third after a four-week run that included scores of 88 and 91. The title race has acquired new management.</p>
+            </div>
+            <figure class="hero-art-frame" style="margin: 0;">
+              <img src="fran-cozze-taranto.jpg" alt="Comic illustration of Fran slurping cozze in Taranto red-and-blue colours at the top of Lega Londra" />
+              <figcaption class="hero-art-caption">Fran S · King of the Table (Taranto Colours)</figcaption>
+            </figure>
+          </div>
+          <div class="hero-stats">
+            <div class="stat-pill">
+              <span class="num">690.5</span>
+              <span class="lbl">Leader Generale (Cozz)</span>
+            </div>
+            <div class="stat-pill">
+              <span class="num">18 pts</span>
+              <span class="lbl">Trio di testa Scontri</span>
+            </div>
+            <div class="stat-pill">
+              <span class="num">95.0</span>
+              <span class="lbl">Picco Dario (G6)</span>
+            </div>
+          </div>
+        </article>
+
+        <div class="article-body">
+          <p>The defining result of the period came immediately: Fran beat Paolo P 3-1 in Giornata 6 and never looked back. Across the following rounds, Don't Touch My Cozz added two draws and another win before finally losing to Palace in Giornata 9. It was still enough to finish the block first in both competitions. Verdi recovered from back-to-back defeats, including a brutal 5-1 against Paolo G, to win the next two and stay attached to the summit.</p>
+
+          <p>Paolo G is the real gate-crasher. Here We Don FC scored 75.5, 88, 69 and 91 in the Generale over Giornate 6–9, won three of four Scontri and now sits third head-to-head and fourth overall. Meanwhile Dario's SS Blue Eagle scored a ridiculous 95 in Giornata 6 and 81 in Giornata 9, climbing to third in the Generale while somehow remaining tenth in the Scontri. Fantacalcio remains committed to absurdism.</p>
+        </div>
+
+        <!-- Il Caso -->
+        <section id="il-caso" class="il-caso">
+          <div class="eyebrow">Il Caso della Settimana</div>
+          <h3>Shareholder confidence is holding up better than results</h3>
+          <p>Don Balon managed only one Scontri win across these four rounds, losing to FantaOzzy and Verdi before another defeat in Giornata 9. The reigning champion is eighth in the Generale and ninth in the Scontri with five defeats from nine. Club sources insist Marco Salvagnini retains the full confidence of Don Balon shareholders.</p>
+          <div class="cm-ticker">BOARD UPDATE // DON BALON: "The board remains impressed by the manager's commitment, though expectations for the Generale remain high."</div>
+        </section>
+
+        <!-- I Migliori in Campo -->
+        <section id="migliori" class="section-block">
+          <div class="section-head">
+            <h2>I migliori in campo</h2>
+            <span>Top Fantavoti · Giornate 6–9</span>
+          </div>
+          <div class="best-grid">
+            <div class="player-card">
+              <div>
+                <div class="player-top">
+                  <span class="fanta-voto">21</span>
+                  <div>
+                    <div class="player-name">Malen</div>
+                    <div class="player-team">Here We Don FC</div>
+                  </div>
+                </div>
+                <p>Four goals. Paolo G's G9 nuclear option.</p>
+              </div>
+            </div>
+
+            <div class="player-card">
+              <div>
+                <div class="player-top">
+                  <span class="fanta-voto">18</span>
+                  <div>
+                    <div class="player-name">Mbangula</div>
+                    <div class="player-team">FC MATTISIX</div>
+                  </div>
+                </div>
+                <p>Hat-trick hero in Matteo's G6 win.</p>
+              </div>
+            </div>
+
+            <div class="player-card">
+              <div>
+                <div class="player-top">
+                  <span class="fanta-voto">17</span>
+                  <div>
+                    <div class="player-name">Esposito F.P.</div>
+                    <div class="player-team">FantaOzzy</div>
+                  </div>
+                </div>
+                <p>A treble powers FantaOzzy's 86-point finale.</p>
+              </div>
+            </div>
+
+            <div class="player-card">
+              <div>
+                <div class="player-top">
+                  <span class="fanta-voto">14</span>
+                  <div>
+                    <div class="player-name">Noslin</div>
+                    <div class="player-team">SS Blue Eagle</div>
+                  </div>
+                </div>
+                <p>Dario's attack keeps producing even when the table refuses to cooperate.</p>
+              </div>
+            </div>
+
+            <div class="player-card">
+              <div>
+                <div class="player-top">
+                  <span class="fanta-voto">14</span>
+                  <div>
+                    <div class="player-name">Varela</div>
+                    <div class="player-team">Crystal Free Palacetine</div>
+                  </div>
+                </div>
+                <p>Palace's most reliable cruise entertainment.</p>
+              </div>
+            </div>
+
+            <div class="player-card">
+              <div>
+                <div class="player-top">
+                  <span class="fanta-voto">13.5</span>
+                  <div>
+                    <div class="player-name">Osmajic</div>
+                    <div class="player-team">WhySoSerious</div>
+                  </div>
+                </div>
+                <p>Two goals as WhySoSerious ends the block strongly.</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Le Pagelle -->
+        <section id="pagelle" class="section-block">
+          <div class="section-head">
+            <h2>Le pagelle · squadra per squadra</h2>
+            <span>Stile Ziliani · Tutte le 12</span>
+          </div>
+
+          <div class="filter-bar" role="group" aria-label="Filtra pagelle per rendimento">
+            <button class="filter-btn active" data-filter="all">Tutte (12)</button>
+            <button class="filter-btn" data-filter="good">Promosse (7+)</button>
+            <button class="filter-btn" data-filter="mid">Rimandate (6–7.5)</button>
+            <button class="filter-btn" data-filter="bad">Zona Pizza (&le;5)</button>
+          </div>
+
+          <div class="pagelle-grid">
+            <article class="pagella-card good" data-tier="good">
+              <div class="pagella-header">
+                <div>
+                  <h3 class="team-title">Don't Touch My Cozz</h3>
+                  <div class="manager-sub">Fran S · 1ª Gen / 1ª Scontri</div>
+                </div>
+                <div class="voto-pill">9</div>
+              </div>
+              <div class="pagella-headline">Cozz You Believe It?</div>
+              <p>Started the block by beating Verdi and ends it top of everything. The old joke was that Fran could build an interesting team but not a title-winning one. At this point the joke is undergoing an independent review.</p>
+            </article>
+
+            <article class="pagella-card good" data-tier="good">
+              <div class="pagella-header">
+                <div>
+                  <h3 class="team-title">Here We Don FC</h3>
+                  <div class="manager-sub">Paolo G · 4ª Gen / 3ª Scontri</div>
+                </div>
+                <div class="voto-pill">9</div>
+              </div>
+              <div class="pagella-headline">Deacon Destroyer</div>
+              <p>88, then 91. Three wins in four and a 5-1 demolition of Verdi. The newcomer has stopped asking where everything is and started rearranging the furniture. Third in Scontri now looks entirely deliberate.</p>
+            </article>
+
+            <article class="pagella-card mid" data-tier="mid">
+              <div class="pagella-header">
+                <div>
+                  <h3 class="team-title">SS Blue Eagle</h3>
+                  <div class="manager-sub">Dario · 3ª Gen / 10ª Scontri</div>
+                </div>
+                <div class="voto-pill">7.5</div>
+              </div>
+              <div class="pagella-headline">Expected Pizza</div>
+              <p>95 in G6. Third in the Generale. Tenth in the Scontri with one win from nine. Guardiola has the underlying numbers; Serse Cosmi has the league table. At some point even Opta would simply order the pizza.</p>
+            </article>
+
+            <article class="pagella-card mid" data-tier="mid">
+              <div class="pagella-header">
+                <div>
+                  <h3 class="team-title">FantaOzzy</h3>
+                  <div class="manager-sub">Marco S · 7ª Gen / 6ª Scontri</div>
+                </div>
+                <div class="voto-pill">7.5</div>
+              </div>
+              <div class="pagella-headline">Ozzy Osbourne Again</div>
+              <p>A slow start to the block, then seven points from the final three and an 86-point finale that dismantled Matteo 4-1. The season has finally found a volume knob and Marco has turned it right.</p>
+            </article>
+
+            <article class="pagella-card good" data-tier="good">
+              <div class="pagella-header">
+                <div>
+                  <h3 class="team-title">Verdi FBC</h3>
+                  <div class="manager-sub">Paolo P · 2ª Gen / 2ª Scontri</div>
+                </div>
+                <div class="voto-pill">7</div>
+              </div>
+              <div class="pagella-headline">Mortale, Dopo Tutto</div>
+              <p>Fran beat him. Paolo G demolished him 5-1. For two weeks the machine looked strangely human. Then came consecutive wins and an 81.5. The empire has not fallen; somebody has merely discovered the fire exit.</p>
+            </article>
+
+            <article class="pagella-card mid" data-tier="mid">
+              <div class="pagella-header">
+                <div>
+                  <h3 class="team-title">Crystal Free Palacetine</h3>
+                  <div class="manager-sub">Marco Mac · 5ª Gen / 5ª Scontri</div>
+                </div>
+                <div class="voto-pill">7</div>
+              </div>
+              <div class="pagella-headline">Cruise Interrupted</div>
+              <p>The Palace liner hit choppy water after its 83-point honeymoon, but beating Fran in G9 was a reminder that the ship is still seaworthy. Fifth in both tables. The revolution has survived its first budget meeting.</p>
+            </article>
+
+            <article class="pagella-card mid" data-tier="mid">
+              <div class="pagella-header">
+                <div>
+                  <h3 class="team-title">FC MATTISIX</h3>
+                  <div class="manager-sub">Matteo · 6ª Gen / 4ª Scontri</div>
+                </div>
+                <div class="voto-pill">7</div>
+              </div>
+              <div class="pagella-headline">The Establishment Strikes Back</div>
+              <p>Unbeaten no more after FantaOzzy's 4-1 in G9, but fourth in the Scontri and still stubbornly relevant. The anti-establishment campaign has reached the awkward phase where Matteo is almost part of the establishment himself.</p>
+            </article>
+
+            <article class="pagella-card mid" data-tier="mid">
+              <div class="pagella-header">
+                <div>
+                  <h3 class="team-title">WhySoSerious</h3>
+                  <div class="manager-sub">Paolo S · 9ª Gen / 8ª Scontri</div>
+                </div>
+                <div class="voto-pill">6.5</div>
+              </div>
+              <div class="pagella-headline">Series of Draws</div>
+              <p>Three draws before finally beating Andrew. Steady rather than spectacular, with eighth place in Scontri and ninth in the Generale. WhySoSerious? Because somebody has to turn up every week and take a point.</p>
+            </article>
+
+            <article class="pagella-card mid" data-tier="mid">
+              <div class="pagella-header">
+                <div>
+                  <h3 class="team-title">No Joya No Problem</h3>
+                  <div class="manager-sub">Fabs · 10ª Gen / 7ª Scontri</div>
+                </div>
+                <div class="voto-pill">6.5</div>
+              </div>
+              <div class="pagella-headline">Signs of Joya</div>
+              <p>Five points from the first three rounds of the block and then a win over Simone. Still tenth in the Generale, but seventh in Scontri. The patient is no longer in intensive care and has asked for the remote.</p>
+            </article>
+
+            <article class="pagella-card bad" data-tier="bad">
+              <div class="pagella-header">
+                <div>
+                  <h3 class="team-title">Don Balon</h3>
+                  <div class="manager-sub">Marco Salvagnini · 8ª Gen / 9ª Scontri</div>
+                </div>
+                <div class="voto-pill">5</div>
+              </div>
+              <div class="pagella-headline">Shares Suspended</div>
+              <p>One victory in four, two more defeats to close the period, five losses from nine overall. The champion is now ninth in the Scontri. Don Balon shareholders remain supportive, although several were seen checking the small print.</p>
+            </article>
+
+            <article class="pagella-card bad" data-tier="bad">
+              <div class="pagella-header">
+                <div>
+                  <h3 class="team-title">Fanta Cannavaro</h3>
+                  <div class="manager-sub">Simone · 11ª Gen / 12ª Scontri</div>
+                </div>
+                <div class="voto-pill">4.5</div>
+              </div>
+              <div class="pagella-headline">Cannavaro Can't</div>
+              <p>Two draws offer faint evidence of civilisation, but seven defeats from nine leave Simone bottom of the Scontri. Andrew has now fallen below him in the Generale, which is less an escape than finding another passenger in the lifeboat.</p>
+            </article>
+
+            <article class="pagella-card bad" data-tier="bad">
+              <div class="pagella-header">
+                <div>
+                  <h3 class="team-title">Fanta1984</h3>
+                  <div class="manager-sub">Andrew · 12ª Gen / 11ª Scontri</div>
+                </div>
+                <div class="voto-pill">4</div>
+              </div>
+              <div class="pagella-headline">1984: A Score Odyssey</div>
+              <p>75, 62.5, 64.5, then 59. Last in the Generale and eleventh in the Scontri. Orwell imagined a dystopia run by an all-seeing state; even he did not foresee a 59-point fantasy team.</p>
+            </article>
+          </div>
+        </section>
+
+      </div>
+
+      <!-- Sidebar -->
+      <aside id="classifiche">
+
+        <!-- Generale Table -->
+        <div class="standings-box">
+          <div class="standings-header">
+            <h3>Classifica Generale</h3>
+            <span>1° Titolo</span>
+          </div>
+          <table class="league-table">
+            <thead>
+              <tr>
+                <th>#</th>
+                <th>Squadra</th>
+                <th>Pti</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="pos-1"><td>1</td><td><span class="team-col">Don't Touch My Cozz</span><span class="mgr-col">Fran S</span></td><td class="pts-cell">690.5</td></tr>
+              <tr class="pos-podium"><td>2</td><td><span class="team-col">Verdi FBC</span><span class="mgr-col">Paolo P</span></td><td class="pts-cell">686.0</td></tr>
+              <tr class="pos-podium"><td>3</td><td><span class="team-col">SS Blue Eagle</span><span class="mgr-col">Dario</span></td><td class="pts-cell">673.5</td></tr>
+              <tr><td>4</td><td><span class="team-col">Here We Don FC</span><span class="mgr-col">Paolo G</span></td><td class="pts-cell">667.5</td></tr>
+              <tr><td>5</td><td><span class="team-col">Crystal Free Palacetine</span><span class="mgr-col">Marco Mac</span></td><td class="pts-cell">654.5</td></tr>
+              <tr><td>6</td><td><span class="team-col">FC MATTISIX</span><span class="mgr-col">Matteo</span></td><td class="pts-cell">652.5</td></tr>
+              <tr><td>7</td><td><span class="team-col">FantaOzzy</span><span class="mgr-col">Marco S</span></td><td class="pts-cell">648.5</td></tr>
+              <tr><td>8</td><td><span class="team-col">Don Balon</span><span class="mgr-col">Marco Salvagnini</span></td><td class="pts-cell">644.5</td></tr>
+              <tr><td>9</td><td><span class="team-col">WhySoSerious</span><span class="mgr-col">Paolo S</span></td><td class="pts-cell">644.0</td></tr>
+              <tr><td>10</td><td><span class="team-col">No Joya No Problem</span><span class="mgr-col">Fabs</span></td><td class="pts-cell">634.0</td></tr>
+              <tr class="pos-pizza"><td>11</td><td><span class="team-col">Fanta Cannavaro</span><span class="mgr-col">Simone</span></td><td class="pts-cell">605.0</td></tr>
+              <tr class="pos-pizza"><td>12</td><td><span class="team-col">Fanta1984</span><span class="mgr-col">Andrew</span></td><td class="pts-cell">601.5</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <!-- Scontri Table -->
+        <div class="standings-box">
+          <div class="standings-header">
+            <h3>Classifica Scontri</h3>
+            <span>2° Titolo</span>
+          </div>
+          <table class="league-table">
+            <thead>
+              <tr>
+                <th>#</th>
+                <th>Squadra</th>
+                <th>Pti</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="pos-1"><td>1</td><td><span class="team-col">Don't Touch My Cozz</span><span class="mgr-col">Fran S</span></td><td class="pts-cell">18</td></tr>
+              <tr class="pos-podium"><td>2</td><td><span class="team-col">Verdi FBC</span><span class="mgr-col">Paolo P</span></td><td class="pts-cell">18</td></tr>
+              <tr class="pos-podium"><td>3</td><td><span class="team-col">Here We Don FC</span><span class="mgr-col">Paolo G</span></td><td class="pts-cell">18</td></tr>
+              <tr><td>4</td><td><span class="team-col">FC MATTISIX</span><span class="mgr-col">Matteo</span></td><td class="pts-cell">16</td></tr>
+              <tr><td>5</td><td><span class="team-col">Crystal Free Palacetine</span><span class="mgr-col">Marco Mac</span></td><td class="pts-cell">14</td></tr>
+              <tr><td>6</td><td><span class="team-col">FantaOzzy</span><span class="mgr-col">Marco S</span></td><td class="pts-cell">14</td></tr>
+              <tr><td>7</td><td><span class="team-col">No Joya No Problem</span><span class="mgr-col">Fabs</span></td><td class="pts-cell">13</td></tr>
+              <tr><td>8</td><td><span class="team-col">WhySoSerious</span><span class="mgr-col">Paolo S</span></td><td class="pts-cell">13</td></tr>
+              <tr><td>9</td><td><span class="team-col">Don Balon</span><span class="mgr-col">Marco Salvagnini</span></td><td class="pts-cell">8</td></tr>
+              <tr class="pos-pizza"><td>10</td><td><span class="team-col">SS Blue Eagle</span><span class="mgr-col">Dario</span></td><td class="pts-cell">6</td></tr>
+              <tr class="pos-pizza"><td>11</td><td><span class="team-col">Fanta1984</span><span class="mgr-col">Andrew</span></td><td class="pts-cell">6</td></tr>
+              <tr class="pos-pizza"><td>12</td><td><span class="team-col">Fanta Cannavaro</span><span class="mgr-col">Simone</span></td><td class="pts-cell">4</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <!-- Pizza Watch -->
+        <div id="pizza-watch" class="pizza-box">
+          <h3>🍕 Pizza Watch · Plot Twist</h3>
+          <p>Simone is finally off the bottom of the Generale. Andrew has replaced him there after a 59 in G9. Dario, meanwhile, remains the statistical candidate: third in raw points, tenth in Scontri.</p>
+          <div class="tribunal-note">
+            <strong>Verdetto del Comitato:</strong> The Pizza committee remains deadlocked. Three separate legal opinions have now been obtained and no consensus has emerged.
+          </div>
+        </div>
+
+      </aside>
+    </div>
+
+  </main>
+
+  <footer>
+    <strong>LA DOMENICA DEL FANTA · LEGA LONDRA 2026/27</strong>
+    <p>Edizione Giornate 6–9 · Generale &gt; Scontri &gt; Champions &gt; Intertoto</p>
+  </footer>
+
+  <script>
+    const buttons = document.querySelectorAll('.filter-btn');
+    const cards = document.querySelectorAll('.pagella-card');
+
+    buttons.forEach(btn => {
+      btn.addEventListener('click', () => {
+        buttons.forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+
+        const filter = btn.dataset.filter;
+        cards.forEach(card => {
+          if (filter === 'all' || card.dataset.tier === filter) {
+            card.classList.remove('hidden');
+          } else {
+            card.classList.add('hidden');
+          }
+        });
+      });
+    });
+  </script>
+</body>
+</html>
